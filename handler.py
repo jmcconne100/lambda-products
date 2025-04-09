@@ -6,6 +6,7 @@ import os
 
 s3 = boto3.client('s3')
 bucket = os.environ.get("BUCKET_NAME", "jon-s3-bucket-for-redshift")
+print(f"BUCKET = {bucket}")
 faker = Faker()
 random.seed(42)
 
